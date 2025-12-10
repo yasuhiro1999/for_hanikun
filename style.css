@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+header .logo {
+  height: 50px;
+  vertical-align: middle;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 20px;
+}
+
+.search {
+  text-align: center;
+  margin: 20px;
+}
+
+#results {
+  margin: 20px;
+}
+
+.member-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+}
+
+.search {
+  text-align: center;
+  margin: 30px;
+}
+
+#searchInput {
+  width: 60%;              /* 横幅を広めに */
+  max-width: 400px;        /* 最大幅を制限 */
+  padding: 10px;           /* 内側余白で文字が見やすく */
+  font-size: 16px;         /* 文字サイズを大きめに */
+  border: 2px solid #666;  /* 枠線を少し濃く */
+  border-radius: 5px;      /* 角を丸めて柔らかい印象 */
+  outline: none;           /* フォーカス時の青枠を消す */
+}
+
+#searchInput:focus {
+  border-color: #007BFF;   /* フォーカス時に青色で強調 */
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+.search button {
+  padding: 10px 20px;      /* ボタンのサイズを調整 */
+  margin-left: 10px;       /* 入力欄との間に余白 */
+  font-size: 16px;
+  background-color: #007BFF; /* 青色で目立たせる */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;         /* ホバー時にポインタ表示 */
+  transition: background-color 0.3s;
+}
+
+.search button:hover {
+  background-color: #0056b3; /* ホバー時に濃い青 */
+}
+
+.sns-links {
+  margin-top: 20px;
+}
+
+.sns {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sns:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #fff;
+}
+
+/* 各SNSごとの色 */
+.twitter { background: #1DA1F2; color: #fff; }
+.instagram { background: #E1306C; color: #fff; }
+.youtube { background: #FF0000; color: #fff; }
+
+.new-video {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.new-video h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ffeb3b, 0 0 20px #4caf50;
+}
+
+.video-thumb {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-thumb:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.7);
+}
+

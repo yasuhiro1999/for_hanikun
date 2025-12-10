@@ -1,0 +1,30 @@
+[
+  {
+    "name": "やすひろ",
+    "field": "演技, 脚本, 企画, 映像編集, 音楽制作, デザイン, イラスト, ナレーション, Web制作, 写真撮影",
+    "page": "yasu.html",
+    "image": "yasuhiro.png",
+    "bio": "やすひろっていいます！趣味はルドーです！一緒にいろんなことしようね！！！<"
+  },
+  {
+    "name": "八二",
+    "field": "ノンデリ",
+    "page": "hani.html",
+    "image": "sample_hani.png",
+    "bio": "八二くんのアホーやーいやーい"
+  },
+  {
+    "name": "にんじんのぐらっせ",
+    "field": "映像制作",
+    "page": "gura.html",
+    "image": "sample_gura.png",
+    "bio": "にんじんのぐらっせという名前ですが、にんじんがきらいです。"
+  },
+  {
+    "name": "ゆいる",
+    "field": "楽曲制作",
+    "page": "yuiru.html",
+    "image": "sample_yuiru.png",
+    "bio": "ゆいるはあほです。でもめちゃくちゃいいやつです。"
+  }
+]

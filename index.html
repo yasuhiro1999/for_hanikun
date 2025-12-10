@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ノンモラルプロダクションホームページ</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header {
+      position: relative;
+      background: url("sample_logo.png") no-repeat center center;
+      background-size: cover;
+      padding: 60px 20px;
+      text-align: center;
+      animation: slideDown 1.5s ease;
+      color: #fff;
+    }
+
+    /* オーバーレイで文字を見やすくする */
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 0;
+    }
+
+    header h1, header nav {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      text-shadow: 0 0 10px #00f, 0 0 20px #0ff;
+      animation: glow 2s infinite alternate;
+    }
+
+    nav ul { list-style: none; padding: 0; }
+    nav ul li { display: inline; margin: 0 15px; }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover { color: #ff0; }
+
+    /* ヒーローセクション */
+    .hero {
+      position: relative;
+      text-align: center;
+      margin: 40px auto;
+    }
+    .hero img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      animation: fadeUp 2s ease;
+    }
+    .hero p {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0,0,0,0.6);
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-size: 1.5em;
+      text-shadow: 0 0 10px #ff0, 0 0 20px #f0f;
+      animation: fadeInText 3s ease;
+    }
+
+    /* ピックアップライバー */
+    .pickup {
+      text-align: center;
+      margin: 60px auto;
+    }
+    .pickup h2 {
+      font-size: 2.2em;
+      margin-bottom: 30px;
+      text-shadow: 0 0 10px #ff0, 0 0 20px #f0f;
+    }
+    .pickup-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .pickup-card {
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      padding: 25px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+      width: 280px;
+      animation: fadeUp 2s ease;
+    }
+    .pickup-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.7);
+    }
+    .pickup-card img {
+      width: 200px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      margin-bottom: 15px;
+      box-shadow: 0 0 20px #0ff, 0 0 40px #00f;
+      animation: pulse 3s infinite;
+    }
+    .pickup-card h3 {
+      margin: 10px 0;
+      font-size: 1.6em;
+      color: #fff;
+      text-shadow: 0 0 5px #ff0, 0 0 10px #f0f;
+    }
+    .pickup-card p {
+      font-size: 1em;
+      color: #eee;
+      line-height: 1.6;
+    }
+    .pickup-card a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #007BFF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .pickup-card a:hover { background: #0056b3; }
+
+    footer {
+      background: rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      animation: slideUp 1.5s ease;
+    }
+
+    /* アニメーション */
+    @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+    @keyframes slideDown { from {transform:translateY(-100%);} to {transform:translateY(0);} }
+    @keyframes slideUp { from {transform:translateY(100%);} to {transform:translateY(0);} }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00f, 0 0 20px #0ff; }
+      to { text-shadow: 0 0 20px #ff0, 0 0 40px #f0f; }
+    }
+    @keyframes fadeUp { from {opacity:0; transform:translateY(50px);} to {opacity:1; transform:translateY(0);} }
+    @keyframes pulse { 0%{transform:scale(1);}50%{transform:scale(1.05);}100%{transform:scale(1);} }
+    @keyframes fadeInText { from {opacity:0;} to {opacity:1;} }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ノンモラルプロダクション</h1>
+    <nav>
+      <ul>
+        <li><a href="members.html">所属者ページ</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="sample_10.jpg" alt="キービジュアル">
+      <p>ようこそ、ノンモラルプロダクションの公式サイトへ。</p>
+    </section>
+
+    <!-- ピックアップライバー -->
+    <section class="pickup">
+      <h2>ピックアップライバー</h2>
+      <div class="pickup-container">
+        <div class="pickup-card">
+          <img src="sample_yasu.png" alt="やすひろのプロフィール画像">
+          <h3>やすひろ</h3>
+          <p>IRIAMクリエイターの第一人者</p>
+          <a href="yasu.html">プロフィールを見る</a>
+        </div>
+        <div class="pickup-card">
+          <img src="sample_hani.png" alt="ハニくんのプロフィール画像">
+          <h3>ハニくん</h3>
+          <p>ノンデリライバー。</p>
+          <a href="hani.html">プロフィールを見る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ノンモラルプロダクション</p>
+  </footer>
+</body>
+</html>

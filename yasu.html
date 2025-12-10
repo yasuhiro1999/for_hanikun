@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>やすひろ - プロフィール</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1b5e20, #2e7d32); /* 濃い緑系 */
+      color: #fff;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header {
+      background: rgba(0,0,0,0.7);
+      padding: 20px;
+      text-align: center;
+      animation: slideDown 1.5s ease;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      text-shadow: 0 0 10px #2e7d32, 0 0 20px #66bb6a;
+      animation: glow 2s infinite alternate;
+    }
+
+    nav ul { list-style: none; padding: 0; }
+    nav ul li { display: inline; margin: 0 15px; }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover { color: #ff0; }
+
+    .profile-card {
+      max-width: 900px;
+      margin: 40px auto;
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 30px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: fadeUp 2s ease;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.7);
+    }
+
+    .profile-card img {
+      width: 250px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      margin: 20px;
+      box-shadow: 0 0 20px #66bb6a, 0 0 40px #1b5e20;
+      animation: pulse 3s infinite;
+    }
+
+    .card-content {
+      flex: 1;
+      color: #fff;
+      text-align: left;
+      margin: 20px;
+    }
+
+    .card-content h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      text-shadow: 0 0 5px #a5d6a7, 0 0 10px #388e3c;
+    }
+
+    .fields {
+      font-weight: bold;
+      margin-bottom: 15px;
+      line-height: 1.8;
+    }
+
+    .card-content p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      animation: fadeInText 3s ease;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      animation: slideUp 1.5s ease;
+    }
+
+    /* アニメーション定義 */
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideDown { from { transform: translateY(-100%); } to { transform: translateY(0); } }
+    @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #2e7d32, 0 0 20px #66bb6a; }
+      to { text-shadow: 0 0 20px #a5d6a7, 0 0 40px #388e3c; }
+    }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+    @keyframes fadeInText { from { opacity: 0; } to { opacity: 1; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>やすひろ</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="members.html">所属者ページ</a></li>
+        <li><a href="hani.html">八二</a></li>
+        <li><a href="gura.html">ぐらっせ</a></li>
+        <li><a href="yuiru.html">ゆいる</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <section class="profile-card">
+    <img src="yasuhiro.png" alt="やすひろのプロフィール画像">
+    <div class="card-content">
+      <h2>得意分野</h2>
+      <p class="fields">
+        演技 / 脚本 / 企画 / 映像編集 / 音楽制作 / デザイン / イラスト / ナレーション / Web制作 / 写真撮影
+      </p>
+      <p>
+        やすひろっていいます！<br>
+        趣味はルドーです！<br>
+        一緒にいろんなことしようね！！！<br>
+      </p>
+
+      <!-- SNSリンクをプロフィールの一部として追加 -->
+      <div class="sns-links">
+        <a href="https://x.com/hiyaoshi01" target="_blank" class="sns twitter">X</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <footer>
+    <p>&copy; 2025 ノンモラルプロダクション</p>
+  </footer>
+</body>
+</html>
